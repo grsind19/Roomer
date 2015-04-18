@@ -19,4 +19,4 @@ Run npm install
 Run grunt-serve
 
 In browse:
-http://localhost:9000/app/index.html
+http://localhost:9000/app/home.html
