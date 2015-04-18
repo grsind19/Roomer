@@ -1,0 +1,25 @@
+{
+  "name": "Roomer",
+  "version": "1.0.0",
+  "description": "Room Rent Calculatot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/grsind19/Roomer.git"
+  },
+  "author": "seetha,sangam",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/grsind19/Roomer/issues"
+  },
+  "homepage": "https://github.com/grsind19/Roomer",
+  "dependencies": {
+    "grunt": "^0.4.5"
+  },
+  "devDependencies": {
+    "grunt-serve": "^0.1.6"
+  }
+}

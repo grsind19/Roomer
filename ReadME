@@ -1,0 +1,22 @@
+****************Roomer************************
+
+This is small app to calculate the romm expenses.
+
+Having developed with 
+
+Bootstrap Framewok as front end,
+Node as sever, 
+Express as middleware, 
+MongoDB as backend.
+
+Pull the code from git.
+
+Open the folder in commond prompt.
+
+Run npm install
+
+
+Run grunt-serve
+
+In browse:
+http://localhost:9000/app/index.html
