@@ -20,3 +20,5 @@ Run grunt-serve
 
 In browse:
 http://localhost:9000/app/home.html
+
+//pushed to codeship and heroku
