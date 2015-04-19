@@ -1,0 +1,39 @@
+ .mainHeader{
+          border-bottom: 1px solid rgb(202, 202, 202);
+        }
+        .menuData{
+          padding: 10px 0px;  
+        }
+        .mainMenu{
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        .menuItem{
+            margin-right: 15px;
+        }
+        .loginText{
+              line-height: 28px;
+              width: 70%;
+              margin-top: 15px;
+              float: right;
+        }
+        .mainContainer{
+            height: 520px;
+            border-bottom: 1px solid rgb(202, 202, 202);
+            
+        }
+        .breadCrum{
+            padding-top: 10px;
+        }
+.contentPanels{
+    padding: 15px;
+}
+.contentBox{
+    border: 1px solid grey;
+  height: 120px;
+  vertical-align: middle;
+  text-align: center;
+}
+.contentContainer{
+    border-right: 1px solid rgb(202, 202, 202);
+}
