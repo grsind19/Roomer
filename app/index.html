@@ -19,38 +19,31 @@
   <body>
     <div class="container">
       <div class="row mainHeader">
-      <div class="col-md-2">
+      <div class="col-md-2" id="logo">
         <h3 class="pull-left">Roomer</h3>
       </div>
       <div class="col-md-10">
-       <div class="col-md-9 mainMenu">
+       <div class="col-md-6 mainMenu">
           <button type="button" class="btn btn-danger btn-xs menuItem">Home</button>
-           <button type="button" class="btn btn-primary btn-xs menuItem"><a href="src/addExpense/addExpense.html">Add Expense</a></button>
-           <button type="button" class="btn btn-primary btn-xs menuItem">Details</button>
-           <button type="button" class="btn btn-primary btn-xs menuItem">Details</button>
+           <button type="button" class="btn btn-primary btn-xs menuItem menuText"><a href="src/addExpense/addExpense.html">Add Expense</a>  </button>
+           <button type="button" class="btn btn-primary btn-xs menuItem menuText"><a href="src/spendDetails/spendDetails.html">Spend Details</a>  </button>
+           <button type="button" class="btn btn-primary btn-xs menuItem menuText"><a href="src/admin/admin.html">Admin</a> </button>
           </div>
-       <div class="col-md-3">
-          <div class="loginText">Welcome Seetha <i class="fa fa-user"></i></div>
+       <div class="col-md-6">
+           <div class="selectMonth pull-left col-md-6">March <i class="fa fa-calendar-o"></i></div>
+          <div class="loginText col-md-6"><div class="" data-toggle="dropdown">Welcome Seetha <i class="fa fa-user"></i></div><ul class="dropdown-menu" role="menu">
+          <li><a href="#"><i class="fa fa-power-off"></i>&nbsp;&nbsp;Logout</a></li></div>
+           
+
+        </ul>
           </div>
       </div>
       </div>
+        <!--container part starts here-->
       <div class="row mainContainer">
         <div class='col-md-12'>
-            <div class="row">
-                <div class='col-md-12'>
-            <div class="row breadCrum">
-                <div class="col-md-8">
-                    Currently In : Home
-                    <p class="pull-right">Viewing Month : March <a>Select Month</a></p>
-                </div>
-                <div class="col-md-4">
-                    
-                </div>
-            </div>
-        </div>
-      </div>
         <div class="row">
-            <div class="row contentContainer col-md-8">
+            <div class="row contentContainer col-md-12">
                 <div class="row">
                   <div class="col-md-4 contentPanels">
                         <div class="contentBox col-md-12 pull-right">
@@ -101,13 +94,14 @@
                 </div>
                 
             </div>
-            <div class="row col-md-4">
             
-            </div>
             </div>
         </div>
       </div>
+        
+        <!--container part ends here-->
         <footer>
+            <br/>
             Copywright@SeethaSangam.Inc
         </footer>
     </div>
