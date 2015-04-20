@@ -1,4 +1,11 @@
- .mainHeader{
+.container{
+    width:900px !important;
+}
+#logo{
+    padding-left: 0px;
+}
+
+.mainHeader{
           border-bottom: 1px solid rgb(202, 202, 202);
         }
         .menuData{
@@ -9,11 +16,12 @@
             margin-bottom: 10px;
         }
         .menuItem{
-            margin-right: 15px;
+            margin-right: 10px;
+            
         }
-        .loginText{
+        .loginText,.selectMonth{
               line-height: 28px;
-              width: 70%;
+              width: 50%;
               margin-top: 15px;
               float: right;
         }
@@ -35,5 +43,10 @@
   text-align: center;
 }
 .contentContainer{
-    border-right: 1px solid rgb(202, 202, 202);
+  
 }
+.menuText a, .menuText a:hover {
+    color: white !important;/*later remove*/
+    text-decoration: none;
+}
+
