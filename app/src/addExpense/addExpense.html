@@ -1,116 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
-    <title>Roomer</title>
-    <link href="../../plugins/css/bootstrap.min.css" rel="stylesheet">
-      <link href="../../plugins/css/font-awesome.min.css" rel="stylesheet">
-      <link href="../../styles.css" rel="stylesheet">
-    <style>
-       
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="row mainHeader">
-      <div class="col-md-2" id="logo">
-        <h3 class="pull-left">Roomer</h3>
-      </div>
-      <div class="col-md-10">
-       <div class="col-md-6 mainMenu">
-          <button type="button" class="btn btn-primary btn-xs menuItem">Home</button>
-           <button type="button" class="btn btn-danger btn-xs menuItem menuText">Add Expense</button>
-           <button type="button" class="btn btn-primary btn-xs menuItem menuText"><a href="./src/spendDetails/spendDetails.html">Spent Details</a>  </button>
-           <button type="button" class="btn btn-primary btn-xs menuItem menuText"><a href="./src/admin/admin.html">Admin</a> </button>
-          </div>
-       <div class="col-md-6">
-           <div class="selectMonth pull-left col-md-6">March <i class="fa fa-calendar-o"></i></div>
-          <div class="loginText col-md-6"><div class="" data-toggle="dropdown">Welcome Seetha <i class="fa fa-user"></i></div><ul class="dropdown-menu" role="menu">
-          <li><a href="#"><i class="fa fa-power-off"></i>&nbsp;&nbsp;Logout</a></li></div>
-           
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="../../favicon.ico">
+        <title>Roomer</title>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 
-        </ul>
-          </div>
-      </div>
-      </div>
-        <!--container part starts here-->
-      <div class="row mainContainer">
-        <div class='col-md-12'>
-        <div class="row">
-            <div class="row contentContainer col-md-12">
-                <div class="row">
-                  <div class="col-md-4 contentPanels">
-                        <div class="col-md-12 pull-right">
-                            <h3>Type</h3>
-                            <select>
-                              <option value="food">Food</option>
-                              <option value="clothing">Clothing</option>
-                              <option value="rent">Rent</option>
-                              <option value="fuel">Fuel</option>
-                              <option value="misc">Misc.</option>
-                            </select>
-                        </div>
-                  </div>
-                 <div class="col-md-4">
-                   
-                  </div>
-                    <div class="col-md-4 contentPanels">
-                        <div class="col-md-12 pull-left">
-                            <h3>Date</h3>
-                             <!-- Need to add calander plugin-->
-                        </div>
-                  </div>
+        <link href="../../plugins/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../plugins/css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../styles.css" rel="stylesheet">
+        <style>
+
+        </style>
+
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+        <script>
+            $(function() {
+                $( "#datepicker" ).datepicker();
+            });
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row mainHeader">
+                <div class="col-md-2" id="logo">
+                    <h3 class="pull-left">Roomer</h3>
                 </div>
-                
-                <div class="row">
-                  <div class="col-md-4 contentPanels">
-                        <div class="col-md-12 pull-right">
-                        <h3>Description</h3>
-                            <input type="text" name="desc">
-                        </div>
-                  </div>
-                 <div class="col-md-4">
-                   
-                  </div>
-                    <div class="col-md-4 contentPanels">
-                       <div class="col-md-12  pull-left">
-                        <h3>Amount</h3>
-                            <input type="text" name="fname" value="Rs.">
-                        </div>
-                  </div>
+                <div class="col-md-10">
+                    <div class="col-md-6 mainMenu">
+                        <button type="button" class="btn btn-primary btn-xs menuItem">Home</button>
+                        <button type="button" class="btn btn-danger btn-xs menuItem menuText">Add Expense</button>
+                        <button type="button" class="btn btn-primary btn-xs menuItem menuText"><a href="./src/spendDetails/spendDetails.html">Spent Details</a>  </button>
+                        <button type="button" class="btn btn-primary btn-xs menuItem menuText"><a href="./src/admin/admin.html">Admin</a> </button>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="selectMonth pull-left col-md-6">March <i class="fa fa-calendar-o"></i></div>
+                        <div class="loginText col-md-6"><div class="" data-toggle="dropdown">Welcome Seetha <i class="fa fa-user"></i></div><ul class="dropdown-menu" role="menu">
+                            <li><a href="#"><i class="fa fa-power-off"></i>&nbsp;&nbsp;Logout</a></li></div>
+
+
+                            </ul>
+                    </div>
                 </div>
-                <div class="row">
-                  <div class="col-md-4 contentPanels">
-                        <div class="col-md-12 pull-right">
-                        <h3>Exclude</h3>
-                            <input type="radio" name="Yes" value="Yes">Yes
-                            <input type="radio" name="No" value="No">No
-                        </div>
-                  </div>
-                 
-                </div>
-                
             </div>
-            
+            <!--container part starts here-->
+            <div class="row mainContainer">
+                <div class='col-md-12'>
+                    <div class="row">
+                        <div class="row contentContainer col-md-12">
+                            <div class="row">
+                                <div class="col-md-4 contentPanels">
+                                    <div class="col-md-12 pull-right">
+                                        <h3>Type</h3>
+                                        <select>
+                                            <option value="food">Food</option>
+                                            <option value="clothing">Clothing</option>
+                                            <option value="rent">Rent</option>
+                                            <option value="fuel">Fuel</option>
+                                            <option value="misc">Misc.</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+
+                                </div>
+                                <div class="col-md-4 contentPanels">
+                                    <div class="col-md-12 pull-left">
+                                        <h3>Date</h3>
+                                        <input type="text" id="datepicker">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-4 contentPanels">
+                                    <div class="col-md-12 pull-right">
+                                        <h3>Description</h3>
+                                        <input type="text" name="desc">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+
+                                </div>
+                                <div class="col-md-4 contentPanels">
+                                    <div class="col-md-12  pull-left">
+                                        <h3>Amount</h3>
+                                        <input type="text" name="fname" value="Rs.">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 contentPanels">
+                                    <div class="col-md-12 pull-right">
+                                        <h3>Exclude</h3>
+                                        <input type="radio" name="Yes" value="Yes">Yes
+                                        <input type="radio" name="No" value="No">No
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
             </div>
+
+            <!--container part ends here-->
+            <footer>
+                <br/>
+                Copywright@SeethaSangam.Inc
+            </footer>
         </div>
-      </div>
-        
-        <!--container part ends here-->
-        <footer>
-            <br/>
-            Copywright@SeethaSangam.Inc
-        </footer>
-    </div>
 
-    <!-- Placed at the end of the document so the pages load faster  -->
-    <script src="plugins/js/jquery.min.js"></script>
-    <script src="plugins/js/bootstrap.min.js"></script>
-  </body>
+        <!-- Placed at the end of the document so the pages load faster  -->
+        <script src="plugins/js/jquery.min.js"></script>
+        <script src="plugins/js/bootstrap.min.js"></script>
+    </body>
 </html>
