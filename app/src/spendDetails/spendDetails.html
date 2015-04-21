@@ -15,6 +15,23 @@
     <style>
        
     </style>
+      <script type="text/javascript" src="../../plugins/js/jquery.min.js"></script>
+      <script>
+      jQuery(document).ready(function() {
+    jQuery('.tabs .tab-links a').on('click', function(e)  {
+        var currentAttrValue = jQuery(this).attr('href');
+ 
+        // Show/Hide Tabs
+        jQuery('.tabs ' + currentAttrValue).show().siblings().hide();
+ 
+        // Change/remove current tab to active
+        jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
+ 
+        e.preventDefault();
+    });
+});
+          
+      </script>
   </head>
   <body>
     <div class="container">
@@ -26,9 +43,9 @@
        <div class="col-md-6 mainMenu">
           <button type="button" class="btn btn-primary btn-xs menuItem menuText"><a href="
               ../../">Home</a></button>
-           <button type="button" class="btn btn-primary btn-xs menuItem menuText"><a href="src/addExpense/addExpense.html">Add Expense</a>  </button>
-           <button type="button" class="btn btn-danger btn-xs menuItem menuText"><a href="src/spendDetails/spendDetails.html">Spend Details</a>  </button>
-           <button type="button" class="btn btn-primary btn-xs menuItem menuText"><a href="src/admin/admin.html">Admin</a> </button>
+           <button type="button" class="btn btn-primary btn-xs menuItem menuText"><a href="./src/addExpense/addExpense.html">Add Expense</a>  </button>
+           <button type="button" class="btn btn-danger btn-xs menuItem menuText">Spend Details</button>
+           <button type="button" class="btn btn-primary btn-xs menuItem menuText"><a href="./src/admin/admin.html">Admin</a> </button>
           </div>
        <div class="col-md-6">
            <div class="selectMonth pull-left col-md-6">March <i class="fa fa-calendar-o"></i></div>
@@ -44,13 +61,15 @@
             <div class="row contentContainer col-md-12">
                 <h3>Admin</h3>
                 <br/>
-                <ul class="nav nav-tabs">
-                  <li role="presentation" class="active"><a href="#">SpendByYou</a></li>
-                  <li role="presentation"><a href="#">SpendByOthers</a></li>
-                </ul>
-
-              <br/>
-              <table class="table table-striped">
+                <div class="tabs">
+    <ul class="tab-links">
+        <li class="active"><a href="#tab1">SpendByYou</a></li>
+        <li><a href="#tab2">SpendByOthers</a></li>
+    </ul>
+ 
+    <div class="tab-content">
+        <div id="tab1" class="tab active">
+             <table class="table table-striped">
       <thead>
         <tr>
           <th>#</th>
@@ -105,6 +124,69 @@
         </tr>
       </tbody>
     </table>
+        </div>
+ 
+        <div id="tab2" class="tab">
+             <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Type</th>
+          <th>Amount</th>
+          <th>Description</th>
+            <th>Exclude</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Food</td>
+          <td>70</td>
+          <td>Afternoon</td>
+            <td>Parthi</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Rent</td>
+          <td>70</td>
+          <td>Afnoon</td>
+            <td>Parthi</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Clothes</td>
+          <td>70</td>
+          <td>Afnoon</td>
+            <td>Parthi</td>
+        </tr>
+          <tr>
+          <th scope="row">4</th>
+          <td>Bills</td>
+          <td>70</td>
+          <td>Afnoon</td>
+            <td>Parthi</td>
+        </tr>
+          <tr>
+          <th scope="row">5</th>
+          <td>Misc</td>
+          <td>56</td>
+          <td>Afnoon</td>
+            <td>Nava</td>
+        </tr>
+          <tr>
+          <th scope="row">6</th>
+          <td>Extra</td>
+          <td>56</td>
+          <td>Afnoon</td>
+            <td>Nava</td>
+        </tr>
+      </tbody>
+    </table>
+        </div>
+ 
+    </div>
+</div>
+            
                                 <nav>
   <ul class="pagination pull-right">
     <li>
