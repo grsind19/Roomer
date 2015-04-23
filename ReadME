@@ -15,8 +15,7 @@ Open the folder in commond prompt.
 
 Run npm install
 
-
-Run grunt-serve
+Run grunt serve
 
 In browse:
 http://localhost:9000/app/home.html
