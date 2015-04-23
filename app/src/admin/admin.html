@@ -15,6 +15,22 @@
     <link href="../../styles.css" rel="stylesheet">
     <style>
     </style>
+     <script type="text/javascript" src="../../plugins/js/jquery.min.js"></script>
+    <script>
+        jQuery(document).ready(function () {
+            jQuery('.tabs .tab-links a').on('click', function (e) {
+                var currentAttrValue = jQuery(this).attr('href');
+
+                // Show/Hide Tabs
+                jQuery('.tabs ' + currentAttrValue).show().siblings().hide();
+
+                // Change/remove current tab to active
+                jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
+
+                e.preventDefault();
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -53,15 +69,18 @@
                     <div class="row contentContainer col-md-12">
                         <h3>Admin</h3>
                         <br/>
-                        <ul class="nav nav-tabs">
-                            <li role="presentation" class="active"><a href="#">Members</a>
-                            </li>
-                            <li role="presentation"><a href="#">Configuration</a>
-                            </li>
-                        </ul>
+                        
+                        <div class="tabs">
+                            <ul class="tab-links">
+                                <li class="active"><a href="#tab1">Members</a>
+                                </li>
+                                <li><a href="#tab2">Configuration</a>
+                                </li>
+                            </ul>
 
-                        <br/>
-                        <table class="table table-striped">
+                            <div class="tab-content">
+                                <div id="tab1" class="tab active">
+                                    <table class="table table-striped">
                             <thead>
                                 <tr>
                                     <th>#</th>
@@ -129,6 +148,83 @@
                                 </tr>
                             </tbody>
                         </table>
+                                </div>
+
+                                <div id="tab2" class="tab">
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Type</th>
+                                                <th>Amount</th>
+                                                <th>Description</th>
+                                                <th>Exclude</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Food</td>
+                                                <td>70</td>
+                                                <td>Afternoon</td>
+                                                <td>Parthi</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>Rent</td>
+                                                <td>70</td>
+                                                <td>Afnoon</td>
+                                                <td>Parthi</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>Clothes</td>
+                                                <td>70</td>
+                                                <td>Afnoon</td>
+                                                <td>Parthi</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">4</th>
+                                                <td>Bills</td>
+                                                <td>70</td>
+                                                <td>Afnoon</td>
+                                                <td>Parthi</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">5</th>
+                                                <td>Misc</td>
+                                                <td>56</td>
+                                                <td>Afnoon</td>
+                                                <td>Nava</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">6</th>
+                                                <td>Extra</td>
+                                                <td>56</td>
+                                                <td>Afnoon</td>
+                                                <td>Nava</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                                <br/>
+                        
+                        
 
 
                     </div>
